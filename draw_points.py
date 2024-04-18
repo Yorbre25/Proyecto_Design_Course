@@ -35,12 +35,12 @@ def img_to_pcd_NYU(original_path, depth_path, pcd_path):
     colors = extract_color_image(original_path)
     pcd_o3d.colors = o3d.utility.Vector3dVector(colors)  
     # Visualize:
-    o3d.visualization.draw_geometries([pcd_o3d])
+    # o3d.visualization.draw_geometries([pcd_o3d])
     # Save:
-    # o3d.io.write_point_cloud(pcd_path, pcd_o3d)
+    o3d.io.write_point_cloud(pcd_path, pcd_o3d)
 
-input = "input/"
-original_path = input + "sample_2.png"
-depth_path = input + "depth_sample_2.png"
-img_to_pcd_NYU(original_path, depth_path, "output/output.ply")
+
+
+
+        
 
