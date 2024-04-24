@@ -9,8 +9,6 @@ def extract_color_image(img_path):
     img = asarray(img)
     img = img/255.0 # normalize RGB values to [0, 1]
 
-
-
     height, width, channels = img.shape
     length = height * width
 
